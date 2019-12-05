@@ -1,4 +1,8 @@
-namespace :greeting do
+task :environment do
+  require_relative './config/environment'
+end
+
+mespace :greeting do
 desc 'outputs hello to the terminal'
   task :hello do
     puts "hello from Rake!"
@@ -17,6 +21,3 @@ namespace :db do
   end
 end
 
-task :environment do
-  require_relative './config/environment'
-end
